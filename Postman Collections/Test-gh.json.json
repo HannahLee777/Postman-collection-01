@@ -1081,130 +1081,130 @@
             "description": "Login passcode successfully\n--\n\nExpected Behavior: 200 OK"
           },
           "response": []
+        },
+        {
+          "name": "TRANSACTION_Step 21: Student  get transaction",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "76a6933b-6152-4af5-9b90-60a4d4fabb27",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "e4814858-8d40-42c0-9a00-d0e130f37399",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "4abf8027-2b1e-4d1d-86ae-ca1ed9a49759",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3MTRhZTUzMS1hZGM2LTQ0NTItYjExNC1iMWNmMTAyYmI4Y2EiLCJ0eXBlIjoiU1RVREVOVCIsImNsYXNzSWQiOiJkNzliN2Y4OC01MmZjLTQ4MzgtOTgyZC1lOTRiOTRlYmZkMTAiLCJ1c2VybmFtZSI6ImhvYW5nbGU4NjciLCJlbWFpbCI6bnVsbCwidG9rZW5UeXBlIjoiQVBJIiwiZGV2aWNlSWQiOiI4ODg4OCIsImlhdCI6MTYzMjA1MzQ4NCwiZXhwIjoxNjMzMjYzMDg0fQ.PzqvAdG6jRa5p-BREYGI7MTFwDHsBsiXRBfC29cEDys"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://api.kyf-tech.com:8000/transaction/714ae531-adc6-4452-b114-b1cf102bb8ca?limit=10000&offset=0",
+              "protocol": "http",
+              "host": [
+                "api",
+                "kyf-tech",
+                "com"
+              ],
+              "port": "8000",
+              "path": [
+                "transaction",
+                "714ae531-adc6-4452-b114-b1cf102bb8ca"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "10000"
+                },
+                {
+                  "key": "offset",
+                  "value": "0"
+                }
+              ]
+            },
+            "description": "Login passcode successfully\n--\n\nExpected Behavior: 200 OK"
+          },
+          "response": []
+        },
+        {
+          "name": "USER_Step 22: updateStudentProfile",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "3de41ccb-8a9a-4976-974f-8663eab80dc7",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "71dd3b0f-9bec-484b-99b8-2f82f4cf36e9",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "6c738465-918d-44fc-848d-ba324946cc1f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyYWMzNTRmMC01MzEzLTRiNTQtYjZlYy02MTkyMTVmNDkxMDEiLCJ0eXBlIjoiVEVBQ0hFUiIsImNsYXNzSWQiOiJkNzliN2Y4OC01MmZjLTQ4MzgtOTgyZC1lOTRiOTRlYmZkMTAiLCJ1c2VybmFtZSI6IkhvYW5nTGU4ODgiLCJlbWFpbCI6ImhvYW5nbGVfMDJAZ21haWwuY29tIiwidG9rZW5UeXBlIjoiQVBJIiwiZGV2aWNlSWQiOiI3Nzc3NyIsImlhdCI6MTYzMDIwMjgzOSwiZXhwIjoxNjMxNDEyNDM5fQ.CXqUwQJmxk0t0O6qjqAGTaROLfeMOg2Mewacmx9gdIM"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"firstName\": \"New Setudent\",\n    \"lastName\": \"HanhSecond\",\n    \"birthday\": \"20-09-1991\",\n    \"username\": \"Nelson\",\n    \"phone\": \"0945207899\"\n}"
+            },
+            "url": "http://api.kyf-tech.com:8000/profile/student/06b3c37a-58c0-4a3d-9ff3-c16de67bd316",
+            "description": "Login passcode successfully\n--\n\nExpected Behavior: 200 OK"
+          },
+          "response": []
         }
       ],
       "id": "3eb06bd5-34c8-460d-8f01-3713063858a0"
-    },
-    {
-      "name": "TRANSACTION_Step 21: Student  get transaction",
-      "event": [
-        {
-          "listen": "prerequest",
-          "script": {
-            "id": "76a6933b-6152-4af5-9b90-60a4d4fabb27",
-            "exec": [
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        },
-        {
-          "listen": "test",
-          "script": {
-            "id": "e4814858-8d40-42c0-9a00-d0e130f37399",
-            "exec": [
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "id": "4abf8027-2b1e-4d1d-86ae-ca1ed9a49759",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3MTRhZTUzMS1hZGM2LTQ0NTItYjExNC1iMWNmMTAyYmI4Y2EiLCJ0eXBlIjoiU1RVREVOVCIsImNsYXNzSWQiOiJkNzliN2Y4OC01MmZjLTQ4MzgtOTgyZC1lOTRiOTRlYmZkMTAiLCJ1c2VybmFtZSI6ImhvYW5nbGU4NjciLCJlbWFpbCI6bnVsbCwidG9rZW5UeXBlIjoiQVBJIiwiZGV2aWNlSWQiOiI4ODg4OCIsImlhdCI6MTYzMjA1MzQ4NCwiZXhwIjoxNjMzMjYzMDg0fQ.PzqvAdG6jRa5p-BREYGI7MTFwDHsBsiXRBfC29cEDys"
-          },
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "http://api.kyf-tech.com:8000/transaction/714ae531-adc6-4452-b114-b1cf102bb8ca?limit=10000&offset=0",
-          "protocol": "http",
-          "host": [
-            "api",
-            "kyf-tech",
-            "com"
-          ],
-          "port": "8000",
-          "path": [
-            "transaction",
-            "714ae531-adc6-4452-b114-b1cf102bb8ca"
-          ],
-          "query": [
-            {
-              "key": "limit",
-              "value": "10000"
-            },
-            {
-              "key": "offset",
-              "value": "0"
-            }
-          ]
-        },
-        "description": "Login passcode successfully\n--\n\nExpected Behavior: 200 OK"
-      },
-      "response": []
-    },
-    {
-      "name": "USER_Step 22: updateStudentProfile",
-      "event": [
-        {
-          "listen": "prerequest",
-          "script": {
-            "id": "3de41ccb-8a9a-4976-974f-8663eab80dc7",
-            "exec": [
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        },
-        {
-          "listen": "test",
-          "script": {
-            "id": "71dd3b0f-9bec-484b-99b8-2f82f4cf36e9",
-            "exec": [
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "id": "6c738465-918d-44fc-848d-ba324946cc1f",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "PATCH",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyYWMzNTRmMC01MzEzLTRiNTQtYjZlYy02MTkyMTVmNDkxMDEiLCJ0eXBlIjoiVEVBQ0hFUiIsImNsYXNzSWQiOiJkNzliN2Y4OC01MmZjLTQ4MzgtOTgyZC1lOTRiOTRlYmZkMTAiLCJ1c2VybmFtZSI6IkhvYW5nTGU4ODgiLCJlbWFpbCI6ImhvYW5nbGVfMDJAZ21haWwuY29tIiwidG9rZW5UeXBlIjoiQVBJIiwiZGV2aWNlSWQiOiI3Nzc3NyIsImlhdCI6MTYzMDIwMjgzOSwiZXhwIjoxNjMxNDEyNDM5fQ.CXqUwQJmxk0t0O6qjqAGTaROLfeMOg2Mewacmx9gdIM"
-          },
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"firstName\": \"New Setudent\",\n    \"lastName\": \"HanhSecond\",\n    \"birthday\": \"20-09-1991\",\n    \"username\": \"Nelson\",\n    \"phone\": \"0945207899\"\n}"
-        },
-        "url": "http://api.kyf-tech.com:8000/profile/student/06b3c37a-58c0-4a3d-9ff3-c16de67bd316",
-        "description": "Login passcode successfully\n--\n\nExpected Behavior: 200 OK"
-      },
-      "response": []
     },
     {
       "name": "JOB_Step 23: Teacher create Student Job",
@@ -1411,132 +1411,132 @@
   ],
   "variable": [
     {
-      "id": "990335fc-f4a7-4c03-aabc-e87f68265c22",
+      "id": "c17ba172-4da1-4046-9d30-8c23d1ff939e",
       "key": "email_set",
       "value": "teacher729@gmail.com"
     },
     {
-      "id": "e9d79a40-574d-407e-98c8-e5dbe8e7a71d",
+      "id": "ba80399e-94f9-4db8-8bfb-19066c82b9cb",
       "key": "phone_set",
       "value": 628561989
     },
     {
-      "id": "e74deaef-cec7-4487-9e94-b020c7aa70c8",
+      "id": "c1270dc0-1271-439c-9a76-4660546ce5d9",
       "key": "firstname_set",
       "value": "byiu"
     },
     {
-      "id": "228c92c6-c762-4c1c-ac6d-27181c008d8c",
+      "id": "bdcc7044-4d51-45ea-b1a5-f672317887e7",
       "key": "email",
       "value": "teacher16361@gmail.com"
     },
     {
-      "id": "33892ae9-2736-49b8-8c39-699d77d18c36",
+      "id": "a19081c9-5e9f-470e-8554-ee2aae00b3a6",
       "key": "passcode_set",
       "value": 2643
     },
     {
-      "id": "f392ce65-c848-45d8-ba11-9a78720ab379",
+      "id": "e6bba44a-ae78-478e-9d67-badb54bd6d56",
       "key": "username",
       "value": "teachername176976"
     },
     {
-      "id": "a6d37a5c-f901-40a5-b66d-719d9ccff63e",
+      "id": "6e4aec19-b858-4f1c-8078-012a4890187f",
       "key": "phone",
       "value": "11111111116417"
     },
     {
-      "id": "5333b5c1-037f-469b-9050-4d3f996c35a5",
+      "id": "5696f5c9-a019-4549-b064-d0af070124ad",
       "key": "1111111111",
       "value": "11111111113016"
     },
     {
-      "id": "284338ff-343e-4e90-83ab-729bad1a8dce",
+      "id": "a2355d02-cf84-4251-9877-8b764bae8e8b",
       "key": "student_password",
       "value": "123456785569"
     },
     {
-      "id": "d52bc61f-e0f4-4ec1-a158-6d9ec52ead83",
+      "id": "0c7b2502-d65b-4710-aa9a-3e86305bb641",
       "key": "student_username",
       "value": "student117696"
     },
     {
-      "id": "eccffa73-4a69-4874-a5c2-c193d0980fc5",
+      "id": "388eaa61-c82e-4322-9bee-f9c804fef34c",
       "key": "firstName",
       "value": "jxclb"
     },
     {
-      "id": "2379e07f-3614-4507-93bb-bc5ac7518ca3",
+      "id": "4b77eec1-a4b7-4c1d-82eb-510d9b7e4981",
       "key": "token",
       "value": ""
     },
     {
-      "id": "86950bb8-4d7a-4261-8a8b-80ccb850887f",
+      "id": "23ff1927-1a5f-4d74-b7be-70ea2512f0cb",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "0f64c2dd-4a26-4a49-b757-9af6a7333af2",
+      "id": "62385009-2cdf-4d4d-aa7a-de61cd1963d4",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "dfe99b05-d834-4e51-8123-b093d2b34982",
+      "id": "3a4ca1f8-82c0-4574-8223-81e1984257af",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "4aa46ed6-7cc8-49a1-b501-81e9fd7efdef",
+      "id": "47070a2a-c87d-4e2d-b0a0-6e89e5a77ab2",
       "key": "token",
       "value": ""
     },
     {
-      "id": "f2cf15ae-ac37-472e-a128-6fe27af869b2",
+      "id": "a4f2e5b1-e550-4ebd-bb69-ad4ae6937e81",
       "key": "1111111111",
       "value": ""
     },
     {
-      "id": "65a3cf0b-2e7a-43ef-8964-db6c8388733f",
+      "id": "b74fcbac-7cc1-4528-8460-839cc062c91c",
       "key": "email",
       "value": ""
     },
     {
-      "id": "b4708c2e-dfd2-460d-b28b-3fe2fc1a0655",
+      "id": "4c479b9c-8daa-4468-8cd9-1a4937d789e1",
       "key": "username",
       "value": ""
     },
     {
-      "id": "d20c9c3f-0c7a-41f1-83e8-2c6c3b2f39fb",
+      "id": "d5b1ca1b-adad-4fff-b853-8820d82b536f",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "97384c57-cd71-4a82-b0d3-a060a25fe7ff",
+      "id": "ee80e53a-7a12-4052-9c60-9f24084b1855",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "46b89add-5aae-4f57-a03b-5ef96dca233a",
+      "id": "1c996c5d-963e-407f-94cc-449bde42ea58",
       "key": "student_username",
       "value": ""
     },
     {
-      "id": "043537c4-62ce-4da3-91b5-ae16fe458ebc",
+      "id": "71e78f7c-b850-4dfc-8c60-ae77f73fa2e7",
       "key": "student_password",
       "value": ""
     },
     {
-      "id": "b377966f-0b6b-424c-90bc-cf76ec38ca05",
+      "id": "c5abdadd-ecf1-43f4-944a-29f2e726fb9d",
       "key": "phone",
       "value": ""
     },
     {
-      "id": "0d90e186-83e3-4274-b20e-8c3354466df7",
+      "id": "4508d0ec-6e27-4c9e-b1fb-23826991e38d",
       "key": "goal_name",
       "value": ""
     },
     {
-      "id": "56d1f060-1a1b-4d7c-ac1a-111f9a0c33a3",
+      "id": "83621d1a-29be-4f1a-b92d-05afcb57e0fe",
       "key": "amount",
       "value": ""
     }
