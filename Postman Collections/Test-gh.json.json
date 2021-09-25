@@ -538,6 +538,55 @@
                     "description": "Login passcode successfully\n--\n\nExpected Behavior: 200 OK"
                   },
                   "response": []
+                },
+                {
+                  "name": "LOGIN_Step 4: Teacher Login passcode Copy 6",
+                  "event": [
+                    {
+                      "listen": "prerequest",
+                      "script": {
+                        "id": "b9e6f9dd-264c-4f94-838b-8cbab1b86246",
+                        "exec": [
+                          ""
+                        ],
+                        "type": "text/javascript"
+                      }
+                    },
+                    {
+                      "listen": "test",
+                      "script": {
+                        "id": "81ea5b69-fcce-417e-af5a-734b47300ef8",
+                        "exec": [
+                          ""
+                        ],
+                        "type": "text/javascript"
+                      }
+                    }
+                  ],
+                  "id": "fef712b0-a81e-4ee0-9a29-e2f3875a8c98",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyYWMzNTRmMC01MzEzLTRiNTQtYjZlYy02MTkyMTVmNDkxMDEiLCJ0eXBlIjoiVEVBQ0hFUiIsImNsYXNzSWQiOiJkNzliN2Y4OC01MmZjLTQ4MzgtOTgyZC1lOTRiOTRlYmZkMTAiLCJ1c2VybmFtZSI6IkhvYW5nTGU4ODgiLCJlbWFpbCI6ImhvYW5nbGVfMDJAZ21haWwuY29tIiwidG9rZW5UeXBlIjoiUEFTU0NPREUiLCJkZXZpY2VJZCI6Ijc3Nzc3IiwiaWF0IjoxNjI5NjI0OTg0fQ.1_cY0ab9c6aV1K76fcdC_xMYgeqgPH2D3zOt5dzBocM"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"userId\": \"2ac354f0-5313-4b54-b6ec-619215f49101\",\n    \"passcode\": \"7777\"\n}"
+                    },
+                    "url": "http://api.kyf-tech.com:8000/verify-code",
+                    "description": "Login passcode successfully\n--\n\nExpected Behavior: 200 OK"
+                  },
+                  "response": []
                 }
               ],
               "id": "612eb1d8-b68a-4dc1-ad48-936461c6bba6"
@@ -3009,132 +3058,132 @@
   ],
   "variable": [
     {
-      "id": "c1540b6e-06b3-4127-bcbd-a7d1188e4cf7",
+      "id": "7b5b1f5c-5760-449d-9ac0-196053015466",
       "key": "email_set",
       "value": "teacher729@gmail.com"
     },
     {
-      "id": "b6da2ba9-b4e5-4af4-9d04-8fa2c998d5b6",
+      "id": "66bb9542-be9c-41ee-b4b7-edf867382782",
       "key": "phone_set",
       "value": 628561989
     },
     {
-      "id": "21f3eefe-096b-43b1-adbf-8315ded3be5a",
+      "id": "571ae036-a7d6-4872-b175-11af890ace58",
       "key": "firstname_set",
       "value": "byiu"
     },
     {
-      "id": "45976998-4613-4d78-9e2c-5fd74dd63fab",
+      "id": "51d1aa57-9e86-4576-bf51-8ffa965ac4fb",
       "key": "email",
       "value": "teacher16361@gmail.com"
     },
     {
-      "id": "20825977-d9e0-4d7c-ab23-a399ab457b97",
+      "id": "d2f68930-cce6-4045-8832-24b7557ab4f2",
       "key": "passcode_set",
       "value": 2643
     },
     {
-      "id": "b02fc50c-828e-43e8-a6d4-96f44e8e400c",
+      "id": "03da0aac-e1b2-4a41-bee8-4734094871d0",
       "key": "username",
       "value": "teachername176976"
     },
     {
-      "id": "01ae68f4-1ae3-4ede-a61d-10e19d44117f",
+      "id": "593c7e77-c9d4-43a2-95d9-e863a9853017",
       "key": "phone",
       "value": "11111111116417"
     },
     {
-      "id": "25c50e7f-1f92-4816-9ee1-843666ba162f",
+      "id": "9b727dd9-eaab-40a5-b461-35016eeed4fc",
       "key": "1111111111",
       "value": "11111111113016"
     },
     {
-      "id": "ebb973d1-baf6-4e72-b9c8-8b1349c39a2e",
+      "id": "8838976b-94fc-4f2e-b163-df7440650eef",
       "key": "student_password",
       "value": "123456785569"
     },
     {
-      "id": "5d91a92d-c7fc-480b-b0d5-557da0b1c7b6",
+      "id": "58d5cffc-90d6-4147-9803-bdd20fc3a4dd",
       "key": "student_username",
       "value": "student117696"
     },
     {
-      "id": "6e7b0fbf-d8d1-489a-aaa0-07287daa0250",
+      "id": "0aab7c8f-59f8-4ef8-8e12-01b4ed409c9f",
       "key": "firstName",
       "value": "jxclb"
     },
     {
-      "id": "0518c049-0025-4253-ae7d-32a7d82ce544",
+      "id": "3b284424-99fe-42f2-96e9-21fb46d2cc7d",
       "key": "token",
       "value": ""
     },
     {
-      "id": "43c8f12f-813a-49a2-8880-308662f00be7",
+      "id": "766d5805-18a9-4275-ae9d-423b47531475",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "eec52879-52a1-4c9e-982d-af116cdb6fdc",
+      "id": "8d38cf5e-daff-4842-883e-1945cee97d0d",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "35f04028-f431-460d-9348-86a7543e6cb6",
+      "id": "e5e99120-4000-493c-ab02-96b58dcacafe",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "53d3f779-8c51-4119-b9c6-152e383a6d5d",
+      "id": "842c1661-6a06-4ceb-a29d-6f464e6a525e",
       "key": "token",
       "value": ""
     },
     {
-      "id": "aeb845c6-9bf1-4e95-ab42-74762a13827c",
+      "id": "96b4b213-8295-4253-90d3-b13df83059c4",
       "key": "1111111111",
       "value": ""
     },
     {
-      "id": "7bda14da-aaea-4814-8807-11f217aa65dd",
+      "id": "bc3729a0-a42d-4252-8575-bc941823eeaa",
       "key": "email",
       "value": ""
     },
     {
-      "id": "e941d6bd-8bc0-4b03-b49e-3cc59ab91408",
+      "id": "4d32b33f-2da1-4b13-8048-2834850224c2",
       "key": "username",
       "value": ""
     },
     {
-      "id": "c11b1f03-b693-49ff-a22a-93e529f012d2",
+      "id": "5e8fd93e-dfcc-42bf-a950-1c23856dd2bb",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "cb7c9be6-1548-4017-aad5-2d9a067f9b06",
+      "id": "5d6dae06-26bd-4bb5-9b04-157184430bb8",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "e99805df-dc99-4c89-bc03-4180ee34bd7b",
+      "id": "b731d1c6-19a2-48c7-a50a-5023cd992cbe",
       "key": "student_username",
       "value": ""
     },
     {
-      "id": "213ca084-903b-4f2d-926b-d1b8fe4713d6",
+      "id": "ae23d25f-c0b5-4d20-a418-e2d51fab256f",
       "key": "student_password",
       "value": ""
     },
     {
-      "id": "38d9f4c0-13e3-4c8d-90bf-621f280bfeb1",
+      "id": "28412419-d8f1-4138-b5d0-8f3acf3ce789",
       "key": "phone",
       "value": ""
     },
     {
-      "id": "912af397-7713-47ad-8c7e-39b49b784f1d",
+      "id": "1147d913-d65a-4bda-a8d0-02df31f014b4",
       "key": "goal_name",
       "value": ""
     },
     {
-      "id": "9d2b8ef0-d9de-41c6-ad88-3fb3a80b6908",
+      "id": "1ac7b0ef-b6ea-4f2f-9940-8f110a0ae85e",
       "key": "amount",
       "value": ""
     }
