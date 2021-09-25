@@ -1335,56 +1335,56 @@
             "url": "http://api.kyf-tech.com:8000/job/714ae531-adc6-4452-b114-b1cf102bb8ca"
           },
           "response": []
-        },
-        {
-          "name": "JOB_Step27: Teacher update any job",
-          "id": "4016fbb1-2d77-401b-9211-d93bbbff8a45",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "PATCH",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyYWMzNTRmMC01MzEzLTRiNTQtYjZlYy02MTkyMTVmNDkxMDEiLCJ0eXBlIjoiVEVBQ0hFUiIsImNsYXNzSWQiOiJkNzliN2Y4OC01MmZjLTQ4MzgtOTgyZC1lOTRiOTRlYmZkMTAiLCJ1c2VybmFtZSI6IkhvYW5nTGU4ODgiLCJlbWFpbCI6ImhvYW5nbGVfMDJAZ21haWwuY29tIiwidG9rZW5UeXBlIjoiQVBJIiwiZGV2aWNlSWQiOiI3Nzc3NyIsImlhdCI6MTYzMjAyNTg1OCwiZXhwIjoxNjMzMjM1NDU4fQ.UY0S3n5RybkOz5u4e-7nwJKYtg30KEc2LnYxcRkeviE",
-                "type": "text"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n    \"name\": \"teacher update student job\",\r\n    \"description\": \"teacher update student job\",\r\n    \"status\": \"IN_PROGRESS\"\r\n}"
-            },
-            "url": "http://api.kyf-tech.com:8000/job/75e8d022-6c8d-454d-9587-14057dc69d9d"
-          },
-          "response": []
-        },
-        {
-          "name": "JOB_Step 28: Teacher delete any job",
-          "id": "d37ab286-d3ed-49fb-bcf1-3ae495645bb4",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyYWMzNTRmMC01MzEzLTRiNTQtYjZlYy02MTkyMTVmNDkxMDEiLCJ0eXBlIjoiVEVBQ0hFUiIsImNsYXNzSWQiOiJkNzliN2Y4OC01MmZjLTQ4MzgtOTgyZC1lOTRiOTRlYmZkMTAiLCJ1c2VybmFtZSI6IkhvYW5nTGU4ODgiLCJlbWFpbCI6ImhvYW5nbGVfMDJAZ21haWwuY29tIiwidG9rZW5UeXBlIjoiQVBJIiwiZGV2aWNlSWQiOiI3Nzc3NyIsImlhdCI6MTYzMjAyNTg1OCwiZXhwIjoxNjMzMjM1NDU4fQ.UY0S3n5RybkOz5u4e-7nwJKYtg30KEc2LnYxcRkeviE",
-                "type": "text"
-              }
-            ],
-            "url": "http://api.kyf-tech.com:8000/job/0c228d82-4445-4590-b521-4b34ce38b4df"
-          },
-          "response": []
         }
       ],
       "id": "3eb06bd5-34c8-460d-8f01-3713063858a0"
+    },
+    {
+      "name": "JOB_Step27: Teacher update any job",
+      "id": "4016fbb1-2d77-401b-9211-d93bbbff8a45",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyYWMzNTRmMC01MzEzLTRiNTQtYjZlYy02MTkyMTVmNDkxMDEiLCJ0eXBlIjoiVEVBQ0hFUiIsImNsYXNzSWQiOiJkNzliN2Y4OC01MmZjLTQ4MzgtOTgyZC1lOTRiOTRlYmZkMTAiLCJ1c2VybmFtZSI6IkhvYW5nTGU4ODgiLCJlbWFpbCI6ImhvYW5nbGVfMDJAZ21haWwuY29tIiwidG9rZW5UeXBlIjoiQVBJIiwiZGV2aWNlSWQiOiI3Nzc3NyIsImlhdCI6MTYzMjAyNTg1OCwiZXhwIjoxNjMzMjM1NDU4fQ.UY0S3n5RybkOz5u4e-7nwJKYtg30KEc2LnYxcRkeviE",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"teacher update student job\",\r\n    \"description\": \"teacher update student job\",\r\n    \"status\": \"IN_PROGRESS\"\r\n}"
+        },
+        "url": "http://api.kyf-tech.com:8000/job/75e8d022-6c8d-454d-9587-14057dc69d9d"
+      },
+      "response": []
+    },
+    {
+      "name": "JOB_Step 28: Teacher delete any job",
+      "id": "d37ab286-d3ed-49fb-bcf1-3ae495645bb4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyYWMzNTRmMC01MzEzLTRiNTQtYjZlYy02MTkyMTVmNDkxMDEiLCJ0eXBlIjoiVEVBQ0hFUiIsImNsYXNzSWQiOiJkNzliN2Y4OC01MmZjLTQ4MzgtOTgyZC1lOTRiOTRlYmZkMTAiLCJ1c2VybmFtZSI6IkhvYW5nTGU4ODgiLCJlbWFpbCI6ImhvYW5nbGVfMDJAZ21haWwuY29tIiwidG9rZW5UeXBlIjoiQVBJIiwiZGV2aWNlSWQiOiI3Nzc3NyIsImlhdCI6MTYzMjAyNTg1OCwiZXhwIjoxNjMzMjM1NDU4fQ.UY0S3n5RybkOz5u4e-7nwJKYtg30KEc2LnYxcRkeviE",
+            "type": "text"
+          }
+        ],
+        "url": "http://api.kyf-tech.com:8000/job/0c228d82-4445-4590-b521-4b34ce38b4df"
+      },
+      "response": []
     }
   ],
   "event": [
@@ -1411,132 +1411,132 @@
   ],
   "variable": [
     {
-      "id": "9336bbe6-0775-4186-9fa2-98a9ed81fce1",
+      "id": "a59fe188-6ecd-48d7-b2a5-f869fdadda52",
       "key": "email_set",
       "value": "teacher729@gmail.com"
     },
     {
-      "id": "65a8ed97-7860-4a20-abe2-f7d1ab8087a0",
+      "id": "e1df8bd1-95ab-4fb5-9d07-ab165ef91563",
       "key": "phone_set",
       "value": 628561989
     },
     {
-      "id": "b9ed5d3d-22b7-48fd-8941-85384f333bac",
+      "id": "f4c73796-2aeb-4f56-8f02-796d384b75c6",
       "key": "firstname_set",
       "value": "byiu"
     },
     {
-      "id": "d702b920-ed51-427b-8b69-f4825bd4a738",
+      "id": "35a92a47-2a05-4361-b221-0bb9d4871116",
       "key": "email",
       "value": "teacher16361@gmail.com"
     },
     {
-      "id": "4c379be2-4a0c-4be4-9635-1410bb6fcb45",
+      "id": "0b83a5a4-1516-4d61-95c7-2823e07aa3e5",
       "key": "passcode_set",
       "value": 2643
     },
     {
-      "id": "a721a4d0-960e-4345-92ee-66868210bff5",
+      "id": "1b58a516-cc2f-49fc-86b1-b11eb9e793af",
       "key": "username",
       "value": "teachername176976"
     },
     {
-      "id": "ca090acf-35b2-4dd6-adcc-9b04db5556b8",
+      "id": "ae0770f9-d476-40bc-9949-0d7df8a3d5fc",
       "key": "phone",
       "value": "11111111116417"
     },
     {
-      "id": "edf174e5-031d-465c-bb84-210b931820e0",
+      "id": "610ca6bc-a0da-4c01-bc9a-616a28445247",
       "key": "1111111111",
       "value": "11111111113016"
     },
     {
-      "id": "3a1eda56-a2fa-4005-9623-517afbac8ff8",
+      "id": "db05c799-908a-47f0-aded-e15e784f31fa",
       "key": "student_password",
       "value": "123456785569"
     },
     {
-      "id": "5916564d-6312-45ed-b651-91e18bf86652",
+      "id": "3b79f11d-7d93-4180-bd34-400a1b72f813",
       "key": "student_username",
       "value": "student117696"
     },
     {
-      "id": "d4e65926-beb3-4b08-bdba-328ca2ecca6e",
+      "id": "b225661f-e0ed-477a-a597-dca5425f759e",
       "key": "firstName",
       "value": "jxclb"
     },
     {
-      "id": "fdf1b180-d067-4b79-ae15-6ba2964c054c",
+      "id": "43c7b5d3-0d84-4f16-aa5e-7c68cefb12b1",
       "key": "token",
       "value": ""
     },
     {
-      "id": "70ca1d17-81ac-46ea-b67c-b004e604b862",
+      "id": "7090fda6-31dc-4812-be89-1e7d3f240169",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "1ceb0c20-c1bd-4448-a7c1-2f4397036d1e",
+      "id": "7968f446-e1b1-445f-9a01-ee2af5c61ae8",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "55592342-041f-4f78-8dcb-a5b9859fd954",
+      "id": "23a3ec16-bedf-4e37-b56f-4c80ed18f5ae",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "94c4497f-f4fe-46ca-b75a-6537420b4500",
+      "id": "9e75ed3f-bfc9-4cf7-b525-400612b908d1",
       "key": "token",
       "value": ""
     },
     {
-      "id": "391663a8-2da2-415c-8956-1afe89d2e380",
+      "id": "da53edd3-dd6d-472e-ac8f-b856796eae05",
       "key": "1111111111",
       "value": ""
     },
     {
-      "id": "948a09d7-c411-4184-a674-25b34bd91570",
+      "id": "38a5ccc1-93f2-45c2-86b8-0eaa77ee2157",
       "key": "email",
       "value": ""
     },
     {
-      "id": "642eae38-1bc3-4325-a513-75def4bdee60",
+      "id": "f69f07e4-18b6-4545-a936-431e714b72b4",
       "key": "username",
       "value": ""
     },
     {
-      "id": "037bb321-efa0-4bbc-992b-c99dc77551a6",
+      "id": "dfe30d74-c0e1-45d5-a727-55a1160e050a",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "44cf2d57-ef72-4a83-9a83-6406df404dfa",
+      "id": "c3c10e47-18e7-46f9-9682-49bdaaea29a1",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "f425582f-b3f3-4f22-bbf8-c938c55b6e6d",
+      "id": "53ae6976-c2ab-487d-b453-28632d1ca72a",
       "key": "student_username",
       "value": ""
     },
     {
-      "id": "779a359f-0f2c-4e5c-b3a8-01628c8a7838",
+      "id": "56065ece-0fc4-45e2-90e6-f7aa80a20c26",
       "key": "student_password",
       "value": ""
     },
     {
-      "id": "24381a32-2e80-473b-913d-23443e3a7824",
+      "id": "d1e505c2-92c0-4ae4-bfd0-2a9926b88b17",
       "key": "phone",
       "value": ""
     },
     {
-      "id": "b0a81ffd-9641-4f0b-a7bd-af840bf47b31",
+      "id": "bd2ce19c-9e9a-44c3-8c13-1f6bf4630c34",
       "key": "goal_name",
       "value": ""
     },
     {
-      "id": "a609b97d-a5bc-44e2-b525-44723e279cd1",
+      "id": "846a7ac8-7bad-4f51-8355-cd585555af11",
       "key": "amount",
       "value": ""
     }
