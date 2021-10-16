@@ -1784,7 +1784,7 @@
                       }
                     },
                     "url": "{{server}}/passcode-setup",
-                    "description": "Setup passcode successfully\n--\n\nExpected Behavior: 200 OK"
+                    "description": "## NEGATIVE CASES \n\n## Scenario 1: check method:\n## Case 1:  using get method\n\n+ Step 1: Select method different from Post ( select GET) \n+ Step 2: click [Send] request\n\n\n-> Expect: Error 400: bad request: or 405 method not allow \n\n\n## Scenario 2: Check URI:\n## Case 1: Check URI: empty resource \n+ Step 1: Empty\n+ Step 2: click [Send] request\n\n-> Expect: Error 400: bad request: or 404 not found\n\n\n## Case 2: Enter another existed resource but not for setup passcode request \n+ Step 1: Enter resource: /login \n+ Step 2: click [Send] request\n\n-> Expect: Error 400: bad request: or 404 not found\n\n\n## Case 3: Enter part of passcode-setup resource\n+ Step 1: Enter resource: /passcode-set\n+ Step 2: click [Send] request\n\n-> Expect: Error 400: bad request: or 404 not found\n\n## Scenario 3: Check header:\n\n## Case 1: not enter content-type and not enter authorization \n+ Step 1: Empty header\n+ Step 2: click [Send] request\n\n-> Expect: Error 400: bad request / 410 unauthorisation\n\n## Case 2: not enter content-type \n+ Step 1: Empty content-type\n+ Step 2: click [Send] request\n\n-> Expect: Error 400: bad request\n\n## Case 3: keep content-type & empty value \n+ Step 1: Enter content-type and Empty value\n+ Step 2: click [Send] request\n\n-> Expect: Error 400: bad request\n\n## Case 4: keep content-type & enter wrong value \n+ Step 1: Enter content-type and enter value: application/ecmascript\n+ Step 2: click [Send] request\n\n-> Expect: Error 400: bad request\n\n## Case 5: Content-type: True- not enter key Authorization \n+ Step 1: not enter key Authorization \n+ Step 2: click [Send] request\n\n-> Expect: Error 401 Unauthorized\n\n## Case 6: Content-type: True- enter key Authorization and empty value\n+ Step 1: enter key Authorization and empty value\n+ Step 2: click [Send] request\n\n-> Expect: Error 401 Unauthorized\n\n## Case 7: Content-type: True- enter key Authorization and wrong token\n+ Step 1: enter key Authorization and wrong value\n+ Step 2: click [Send] request\n\n-> Expect: Error 401 Unauthorized\n\n## Case 8: Content-type: True- enter key Authorization and expired correct token\n+ Step 1: enter key Authorization and expired correct token\n+ Step 2: click [Send] request\n\n-> Expect: Error 401 Unauthorized"
                   },
                   "response": [
                     {
@@ -1843,7 +1843,7 @@
                             }
                           }
                         },
-                        "url": "{{server}}/passcode-setup"
+                        "url": "{{server}}/"
                       },
                       "_postman_previewlanguage": null,
                       "header": null,
@@ -2141,7 +2141,7 @@
                     },
                     {
                       "id": "1f411b06-473e-4b6f-985c-1e20c7c6f3d7",
-                      "name": "LOGIN_Step 3: Teacher Setup passcode",
+                      "name": "Check header: enter Authorization but enter expired token( Content-type: True)",
                       "originalRequest": {
                         "method": "POST",
                         "header": [
@@ -6527,132 +6527,132 @@
   ],
   "variable": [
     {
-      "id": "1efcc395-d74c-4a57-8613-dae6f9fb24f3",
+      "id": "af416c1e-2ea5-497a-a80a-05d91a4bd2e4",
       "key": "email_set",
       "value": "teacher729@gmail.com"
     },
     {
-      "id": "e8383bf8-eb96-455e-829b-8f2edc30374f",
+      "id": "2d10ed42-e580-4227-9e2f-dd4703d19252",
       "key": "phone_set",
       "value": 628561989
     },
     {
-      "id": "3c32715c-8c1c-40c2-9fbf-7423f049695b",
+      "id": "e20757ae-875d-44e9-aff2-e6190b2e9195",
       "key": "firstname_set",
       "value": "byiu"
     },
     {
-      "id": "44a0209c-e6dc-4cbd-bbcb-8bf3c4be8c23",
+      "id": "5b06256e-8b4a-40b1-9015-62bc310e3dd3",
       "key": "email",
       "value": "teacher16361@gmail.com"
     },
     {
-      "id": "d3119b8d-77cb-4675-8257-fa831a55ceee",
+      "id": "18c3330e-b0a5-42d7-ad94-861102c512a5",
       "key": "passcode_set",
       "value": 2643
     },
     {
-      "id": "d5d25931-6bbd-4172-8c89-9f37f8bc2eb5",
+      "id": "2275beda-59e3-4c77-99bd-82fba7cb5083",
       "key": "username",
       "value": "teachername176976"
     },
     {
-      "id": "208180ed-3afa-4ddc-bcb8-404221672ff9",
+      "id": "5c08c865-8907-46e0-9851-20dba127b02c",
       "key": "phone",
       "value": "11111111116417"
     },
     {
-      "id": "cebda3bc-3178-4dde-b77d-c21da933a70f",
+      "id": "1aa1b723-278a-470d-9a34-af544e708464",
       "key": "1111111111",
       "value": "11111111113016"
     },
     {
-      "id": "68e1cdfa-3d8c-4812-a536-1dc9c721c39d",
+      "id": "5074530a-e039-4cd8-abc6-2c7b923ef556",
       "key": "student_password",
       "value": "123456785569"
     },
     {
-      "id": "db8e8f91-a0c5-4a22-b402-9ce802f6078e",
+      "id": "44b4b36f-5c77-4246-8012-dc3169aa9cf0",
       "key": "student_username",
       "value": "student117696"
     },
     {
-      "id": "6a53c315-acad-4c11-9e69-e0a9289ba525",
+      "id": "1ca7ef22-c7e5-455b-87c9-da51bb0e6a9b",
       "key": "firstName",
       "value": "jxclb"
     },
     {
-      "id": "b80b7f36-4d8f-4ac5-82b5-b167a29f13b6",
+      "id": "964e6b48-8127-4241-b116-2ef98343b49f",
       "key": "token",
       "value": ""
     },
     {
-      "id": "3ee49f20-4472-4151-8aab-757906ae4fef",
+      "id": "c1ec4444-9bdc-4125-bdd3-152ccb2e1f2d",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "2af91dde-8051-4ebc-88c3-754e39707117",
+      "id": "7b9e6f44-b060-4ce6-af01-eb318462e900",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "130251b6-6ca8-4081-884b-e0161bb74d1e",
+      "id": "18029f38-f7b9-44dc-ab6b-598865aae138",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "448378f3-6e44-4c55-8727-28b92f5b28ff",
+      "id": "d1e148a8-c0f7-41f9-91c4-d61766e050f5",
       "key": "token",
       "value": ""
     },
     {
-      "id": "261f80ed-0773-4ab2-a682-598ced281a6c",
+      "id": "a1ce7adb-89ff-4403-a689-22bdbc79d7a6",
       "key": "1111111111",
       "value": ""
     },
     {
-      "id": "a382870b-3228-4665-a41e-fc54618a241f",
+      "id": "05e095a4-54f2-4dcf-8d36-39521845bf04",
       "key": "email",
       "value": ""
     },
     {
-      "id": "fa4e74cb-ddc8-48c5-a017-044613aaba20",
+      "id": "cfe047a0-5caf-414e-a237-66e6b199ba5f",
       "key": "username",
       "value": ""
     },
     {
-      "id": "fc1a30d9-3cb5-4caa-8a47-fcff7d450473",
+      "id": "082723da-b265-465b-87b6-7b433aa3bf8e",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "046fa0e7-50e5-4b3b-b96a-0bff7625f12c",
+      "id": "54e930fd-e398-4c24-bca8-72c625dd21a3",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "ec305512-8e0e-4dcc-b016-b9b97b1f5181",
+      "id": "c81be227-6620-4c18-86c4-e4574f6df478",
       "key": "student_username",
       "value": ""
     },
     {
-      "id": "057c508b-1b0e-4c15-984e-3b99b8744928",
+      "id": "d28acfdd-951e-4cea-87d3-57cf77ae0f66",
       "key": "student_password",
       "value": ""
     },
     {
-      "id": "8347d195-daeb-4298-926c-30540cdd68c9",
+      "id": "3c922c4b-aeca-4c61-aa86-eb97dde7ec97",
       "key": "phone",
       "value": ""
     },
     {
-      "id": "01f96682-5273-4416-9f81-5c85657ce48e",
+      "id": "79fd8ba3-cb7d-49da-ac2e-6ee53b30c2f2",
       "key": "goal_name",
       "value": ""
     },
     {
-      "id": "06f17c3c-8d7d-4784-b160-148993b24e80",
+      "id": "e972b979-1250-4dbf-991f-74f7c06e036e",
       "key": "amount",
       "value": ""
     }
