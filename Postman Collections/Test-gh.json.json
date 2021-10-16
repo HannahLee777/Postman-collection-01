@@ -1916,8 +1916,40 @@
                       "body": null
                     },
                     {
+                      "id": "a5a7e6cc-2431-49c5-947b-886f0513dee8",
+                      "name": "Check header: not enter content type and note enter authorization",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Authorization",
+                            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJlZGU3NGYwNy04YzRhLTRhY2MtYTM2Ny04YTgwNGIzMjExMWEiLCJ0eXBlIjoiVEVBQ0hFUiIsImNsYXNzSWQiOiIxNTY5ZDY4NC1jYTI2LTQ5YzktODc0My04ODE1YWEyNDY0OGUiLCJ1c2VybmFtZSI6IkhvYW5nTGUwNSIsImVtYWlsIjoiaG9hbmdsZTA1QGdtYWlsLmNvbSIsInRva2VuVHlwZSI6IkxPR0lOIiwiZGV2aWNlSWQiOiIxMjM0NSIsImlhdCI6MTYzMjU2MzM1N30.q36B71JSbfReAqds8roy2MSkXZi3Kk6eDMQ7mbBOkfU"
+                          },
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"userId\": \"ede74f07-8c4a-4acc-a367-8a804b32111a\",\r\n    \"passcode\": \"7777\" \r\n}   ",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": "{{server}}/passcode-setup"
+                      },
+                      "_postman_previewlanguage": null,
+                      "header": null,
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": null
+                    },
+                    {
                       "id": "5f2c2d6f-7454-4717-96db-1bf7c06a39f4",
-                      "name": "Check header: not enter content-type",
+                      "name": "Check header: not enter content-type ( Authorization: True)",
                       "originalRequest": {
                         "method": "POST",
                         "header": [
@@ -1949,7 +1981,7 @@
                     },
                     {
                       "id": "920d05af-2799-4531-be9a-246e56bcb034",
-                      "name": "Check header: keep key content-type & empty value",
+                      "name": "Check header: keep key content-type & empty value ( Authorization: True)",
                       "originalRequest": {
                         "method": "POST",
                         "header": [
@@ -1981,7 +2013,7 @@
                     },
                     {
                       "id": "48646949-5c38-4280-895c-25bd8c7f7811",
-                      "name": "Check header: keep key content-type & enter wrong value",
+                      "name": "Check header: keep key content-type & enter wrong value (( Authorization: True)",
                       "originalRequest": {
                         "method": "POST",
                         "header": [
@@ -2013,7 +2045,7 @@
                     },
                     {
                       "id": "cd4077dc-5fee-4517-b540-f14ddf8bf849",
-                      "name": "Check header: not enter  key Authorization",
+                      "name": "Check header: not enter  key Authorization(Content-type: True)",
                       "originalRequest": {
                         "method": "POST",
                         "header": [
@@ -2045,7 +2077,7 @@
                     },
                     {
                       "id": "b511c6c3-7ed9-4a20-8ccf-c9ef60fe20ab",
-                      "name": "Check header: enter key Authorization but empty value",
+                      "name": "Check header: enter key Authorization but empty value (Content-type: True)",
                       "originalRequest": {
                         "method": "POST",
                         "header": [
@@ -2077,7 +2109,7 @@
                     },
                     {
                       "id": "cf694122-763d-4678-806c-4efb1681ca2d",
-                      "name": "Check header: enter Authorization but enter wrong token value",
+                      "name": "Check header: enter Authorization but enter wrong token value(Content-type: True)",
                       "originalRequest": {
                         "method": "POST",
                         "header": [
@@ -2108,7 +2140,7 @@
                       "body": null
                     },
                     {
-                      "id": "a5a7e6cc-2431-49c5-947b-886f0513dee8",
+                      "id": "1f411b06-473e-4b6f-985c-1e20c7c6f3d7",
                       "name": "LOGIN_Step 3: Teacher Setup passcode",
                       "originalRequest": {
                         "method": "POST",
@@ -6495,132 +6527,132 @@
   ],
   "variable": [
     {
-      "id": "10f05e9a-fedf-4e07-8701-10bcf4810d9d",
+      "id": "3d1043f7-f459-437b-8138-cda53c6e5932",
       "key": "email_set",
       "value": "teacher729@gmail.com"
     },
     {
-      "id": "c748fefc-ea14-43f8-80bd-5b61d0f39229",
+      "id": "dbe60a9f-054d-4bcf-919b-fa93554912f2",
       "key": "phone_set",
       "value": 628561989
     },
     {
-      "id": "8636d15d-cbd9-4d3b-befa-9a32d45e933d",
+      "id": "7b7cb5c8-7ed5-4d31-b418-0fcb98087aa9",
       "key": "firstname_set",
       "value": "byiu"
     },
     {
-      "id": "1f6e7b82-eedb-4bab-a40c-687585a93add",
+      "id": "cd2f1831-9db8-4db3-b0d0-243078af390c",
       "key": "email",
       "value": "teacher16361@gmail.com"
     },
     {
-      "id": "5d7617e8-33da-482c-9c1b-ca19915b49d2",
+      "id": "8369aa2d-ebca-4271-9ab0-e1c88b21fdc1",
       "key": "passcode_set",
       "value": 2643
     },
     {
-      "id": "3623755e-c8a5-4aca-9694-03042e068f89",
+      "id": "999dcac3-6b77-44a2-a9c7-0d7ee0c1f875",
       "key": "username",
       "value": "teachername176976"
     },
     {
-      "id": "8e521b96-3b45-4645-a544-6f511dec08d1",
+      "id": "74b7a260-2ba5-4ecd-8100-37c9b76df5db",
       "key": "phone",
       "value": "11111111116417"
     },
     {
-      "id": "b480800d-b3fe-4c8e-b765-0dd11639d548",
+      "id": "77b70916-96c4-4a37-bae7-c5547a1e076a",
       "key": "1111111111",
       "value": "11111111113016"
     },
     {
-      "id": "7d8daed5-6042-4c9c-9f25-40454b5a0bcd",
+      "id": "98c36e15-d95b-458e-aff8-436a3ece4a08",
       "key": "student_password",
       "value": "123456785569"
     },
     {
-      "id": "0b30cffb-f75f-405d-bc83-0e149a9103f3",
+      "id": "6588a772-33d5-4052-8865-888fa9734095",
       "key": "student_username",
       "value": "student117696"
     },
     {
-      "id": "7a51a89a-f1bc-4ebc-9005-c892bd672077",
+      "id": "426b8ea2-75b1-4bcc-8905-0b3654ba9e19",
       "key": "firstName",
       "value": "jxclb"
     },
     {
-      "id": "f0796f9e-6580-4928-be0d-ef082e789395",
+      "id": "08b96686-3ac3-434c-b0c8-c40094a07956",
       "key": "token",
       "value": ""
     },
     {
-      "id": "c387a11f-4386-4c29-983c-430db60fb4d7",
+      "id": "e0a3da4f-56b6-4f5c-a149-d9116a0e1181",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "062f9bc6-fcbd-47ff-a1b2-25f5f465f69f",
+      "id": "67593e88-51ef-4f7d-abc1-e94571388a30",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "44190cb0-c655-4df2-82bc-54170214fd3e",
+      "id": "89f35aed-8084-47fd-82ee-61819219cda3",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "774f250d-92e9-45bc-8f7e-04de6d5ee228",
+      "id": "ce2af575-65a3-4487-88b7-d292bed7133d",
       "key": "token",
       "value": ""
     },
     {
-      "id": "c0517472-961f-49ac-9ca2-131fc19dcfd6",
+      "id": "f52a030a-d698-4a02-9fdd-299d34487196",
       "key": "1111111111",
       "value": ""
     },
     {
-      "id": "c821dcbd-4b67-443c-9ae0-cd580c9eec4b",
+      "id": "c2fad4a9-3283-440d-b82e-3ada6d046dd9",
       "key": "email",
       "value": ""
     },
     {
-      "id": "52c90482-2610-479c-8f95-8219fb7708ac",
+      "id": "b5f7b9cc-0e66-4950-994f-a9afc2a4e455",
       "key": "username",
       "value": ""
     },
     {
-      "id": "59f57809-00dc-4afa-b03a-da83ccc7bb47",
+      "id": "8ac4e269-b6b3-4776-a8ce-eacba1a94608",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "0fc73916-dc1c-4772-927a-07d5a1972624",
+      "id": "01be4886-8061-4dec-954a-de196724918b",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "cc105038-69a9-4eb0-b63d-5e7d230ec288",
+      "id": "e1d5c09a-d8d4-485b-9644-466ccf96b0dd",
       "key": "student_username",
       "value": ""
     },
     {
-      "id": "746a6566-e0d4-46b4-9559-024b87fb2a6c",
+      "id": "daeb87ec-3ed2-49e1-80c0-f10fc4ebc8be",
       "key": "student_password",
       "value": ""
     },
     {
-      "id": "b11bf0a1-5c8c-4cf3-a0ec-fc713c5d275f",
+      "id": "e0485039-d648-498a-ac41-66e2b21e03d5",
       "key": "phone",
       "value": ""
     },
     {
-      "id": "9bc5ed96-aecd-4b22-8729-6fd6522d001d",
+      "id": "ddf9b70a-1a0b-40e9-809e-e53275afaca5",
       "key": "goal_name",
       "value": ""
     },
     {
-      "id": "f2a7bb8e-25fd-4b69-a9d9-b6c2c04aa440",
+      "id": "b165907d-1989-4361-be1a-7b687a8d82fa",
       "key": "amount",
       "value": ""
     }
