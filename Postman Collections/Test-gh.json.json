@@ -108,7 +108,7 @@
                           "raw": "{\n    \"email\": \"hoangle05@gmail.com\",\n    \"password\": \"hoangle777\",\n    \"firstName\": \"Hoang\",\n    \"lastName\": \"Le\",\n    \"birthday\": \"19-04-1990\",\n    \"phone\": \"0945206123\",\n    \"username\": \"HoangLe05\",\n    \"address\": \"123ThaoDien\",\n    \"postCode\": \"3134\",\n    \"state\": \"Vic\",\n    \"suburb\": \"Ringwood\",\n    \"student\": [\n        {\n            \"firstName\": \"HoangStudent\",\n            \"lastName\": \"LeStudent\",\n            \"studentPassword\": \"hoangle77702\"\n        }\n    ]\n}"
                         },
                         "url": "http://api.kyf-tech.com:8000/sign-up",
-                        "description": "## Check email: negative cases\n\n| Key| Description |\n| ------ | ----------- |\n| Email   | Enter register email of teacher |\n| Validation| Unique |\n| Format    |text@text.text |\n| Max length    |255 |\n| Required    |Not null |\n\n## Case 1\n\n\n\n+ Step 1: Enter email registered successfully\n+ Step 2: Keep other valid value \n+ Step 3: click [Send] request\n\n## Case 2: Enter invalid  email format\n| Data| Description |\n| ------ | ----------- |\n| Data 1  | text@text. |\n| Data 2| text@.text |\n| Data 3    |@text.text |\n| Data 4     |@text.|\n| Data 5    |text.text |\n| Data 6    |.text |\n| Data 7    |text@ |\n\n+ Step 1: Enter invalid email format( in table above)\n+ Step 2: Keep other valid value \n+ Step 3: click [Send] request\n\n-> Expect: Error 4--: bad request: invalid email address\n## Case 3: Email does not match max length\n| Data| Description |\n| ------ | ----------- |\n| Data 1  | length = 256 |\n| Data 2| length= null |\n\n-> Expect: Error 4--: bad request: invalid email address"
+                        "description": "## Check email: negative cases\n\n| Key| Description |\n| ------ | ----------- |\n| Email   | Enter register email of teacher |\n| Validation| Unique |\n| Format    |text@text.text |\n| Max length    |255 |\n| Required    |Not null |\n\n## Case 1\n\n\n\n+ Step 1: Enter email registered successfully\n+ Step 2: Keep other valid value \n+ Step 3: click [Send] request\n\n## Case 2: Enter invalid  email format\n| Data| Description |\n| ------ | ----------- |\n| Data 1  | text@text. |\n| Data 2| text@.text |\n| Data 3    |@text.text |\n| Data 4     |@text.|\n| Data 5    |text.text |\n| Data 6    |.text |\n| Data 7    |text@ |\n\n+ Step 1: Enter invalid email format( in table above)\n+ Step 2: Keep other valid value \n+ Step 3: click [Send] request\n\n-> Expect: Error 400: bad request: invalid email address\n## Case 3: Email does not match max length\n| Data| Description |\n| ------ | ----------- |\n| Data 1  | length = 256 |\n| Data 2| length= null |\n\n-> Expect: Error 400: bad request: invalid email address"
                       },
                       "response": []
                     }
@@ -5493,132 +5493,132 @@
   ],
   "variable": [
     {
-      "id": "64a814ba-a43c-42a7-ad99-f982ae191ea3",
+      "id": "ad87e465-2fc9-44d0-a77c-098fc0ce0838",
       "key": "email_set",
       "value": "teacher729@gmail.com"
     },
     {
-      "id": "1be018a0-6e34-4a13-83c8-e33d7a6f8b6f",
+      "id": "f578295b-8c6e-40ec-9f1f-8fd3fa031359",
       "key": "phone_set",
       "value": 628561989
     },
     {
-      "id": "a7f8fd46-283d-4d72-a31a-8b515fea60c7",
+      "id": "14e0880b-eaaa-418c-b403-56c28f311db2",
       "key": "firstname_set",
       "value": "byiu"
     },
     {
-      "id": "bad5c106-001f-46e0-b339-4f46c73f873a",
+      "id": "e260c014-a69b-4bdb-afc6-dee59bd14ad3",
       "key": "email",
       "value": "teacher16361@gmail.com"
     },
     {
-      "id": "ea6d8767-0dca-4af8-8c42-76d800f15ee5",
+      "id": "cfd21269-50e6-4558-9258-07033cd6a4e4",
       "key": "passcode_set",
       "value": 2643
     },
     {
-      "id": "24901ecb-2844-4824-ac7d-3928649370ca",
+      "id": "336af037-1e73-45b4-9a7f-d6973df4ae29",
       "key": "username",
       "value": "teachername176976"
     },
     {
-      "id": "67d8c6cc-710c-4f93-8f01-dfb8ba3e5bde",
+      "id": "7b1087d1-5931-4bfb-8dc0-6534132e40e3",
       "key": "phone",
       "value": "11111111116417"
     },
     {
-      "id": "47ac7fcc-4e86-47cb-8c34-9d3265f887a7",
+      "id": "489d7177-099d-4e63-8705-953d2b8d8c05",
       "key": "1111111111",
       "value": "11111111113016"
     },
     {
-      "id": "1c7c7276-414f-4089-9949-0bf553d0d15c",
+      "id": "6654092f-98bb-4eb5-87c6-977c3ec18358",
       "key": "student_password",
       "value": "123456785569"
     },
     {
-      "id": "4653189b-975d-4d94-ba1b-3694444f8221",
+      "id": "53d72a6f-7cfa-4b5c-82ca-75f2990a259c",
       "key": "student_username",
       "value": "student117696"
     },
     {
-      "id": "b9229277-3b09-45af-88bd-45d9f7bf4446",
+      "id": "86328711-0056-46d3-8080-a85d2dae23d9",
       "key": "firstName",
       "value": "jxclb"
     },
     {
-      "id": "388803af-8d34-462d-9724-131cfaa2425f",
+      "id": "26dd52f1-ca28-42be-b98b-97ae112b0cef",
       "key": "token",
       "value": ""
     },
     {
-      "id": "828e03e2-50ab-45bd-a3c8-17f04506c582",
+      "id": "34aff6aa-4c1b-41f4-a4bf-814f77077523",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "d6cc37cf-98de-44a6-b6eb-d68575bf1837",
+      "id": "c6781668-5e9a-42e3-afb3-726bdcab3eb3",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "4034b0c7-b0b9-4e8d-9e86-cdcf5dba9ba5",
+      "id": "8d9a1fbb-829e-43a2-a59b-aad6588653be",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "3a34cb56-9e10-4528-8e0a-41edf27e9cd4",
+      "id": "4bfe0f9d-ab90-43e0-b059-749cd4eef8d3",
       "key": "token",
       "value": ""
     },
     {
-      "id": "205b667e-1366-486b-a1d7-e69a3db92a67",
+      "id": "bce0218a-d142-4eb9-9e29-c5869f279c8c",
       "key": "1111111111",
       "value": ""
     },
     {
-      "id": "26115408-45d2-422a-818c-668747d54925",
+      "id": "84fa1df4-1ed2-4fa3-8591-e67e373b6064",
       "key": "email",
       "value": ""
     },
     {
-      "id": "8e42982c-a2ba-4f56-9bbc-1a80890e41f5",
+      "id": "b82d1124-7ece-4cd4-8677-379c60e39c8d",
       "key": "username",
       "value": ""
     },
     {
-      "id": "631091c5-18de-4fa7-bb39-1c22bef7467c",
+      "id": "feef87e9-69d3-44e9-8eb2-be41528e7340",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "4f674b22-89e2-4a70-854b-d6e60a5a844c",
+      "id": "a6502fc6-fdb0-4127-8ce4-e4391ce517ac",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "0637cf75-8880-420d-9f8a-a07064a10e05",
+      "id": "f7acf252-ebb3-428f-8041-4e7e0fb00cef",
       "key": "student_username",
       "value": ""
     },
     {
-      "id": "a9562705-3c93-4b4c-b2dc-99aa2d30056d",
+      "id": "e9512ba9-b8d0-47b9-9154-7b5921c742fb",
       "key": "student_password",
       "value": ""
     },
     {
-      "id": "f321657f-32f6-4cc7-a8ea-b01b6ec22f6b",
+      "id": "7aa12caa-6ecd-4f6e-b835-8416b8a8a923",
       "key": "phone",
       "value": ""
     },
     {
-      "id": "2113bd51-2ab4-4d20-9fe3-1d7d250f5df3",
+      "id": "805648ab-111d-4f64-babc-4726b583c105",
       "key": "goal_name",
       "value": ""
     },
     {
-      "id": "89a759bd-7e99-419f-ad30-8576ba4c5a8d",
+      "id": "81f2e648-93bb-448c-89bc-992ffd6f3151",
       "key": "amount",
       "value": ""
     }
